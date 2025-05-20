@@ -1,0 +1,75 @@
+<main>
+    <style>
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            section {
+                grid-template-columns: 1fr;
+               
+            }
+            video {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 40%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .flec{
+            display: flex;
+        }
+        .vid{
+            display: flex;
+        }
+        }
+    </style>
+    <section>
+        <div class="vid">
+            <video src="/pinay-bold/storage/5.MOV" autoplay muted controls></video>
+            <video src="/pinay-bold/storage/4.mp4" autoplay muted controls></video>
+        </div>
+       
+
+        <div class="flec">
+            <img src="/pinay-bold/storage/1.jpg" alt="Image 1">
+            <img src="/pinay-bold/storage/2.jpg" alt="Image 2">
+            <img src="/pinay-bold/storage/3.jpg" alt="Image 3">
+        </div>
+       
+    </section>
+</main>
